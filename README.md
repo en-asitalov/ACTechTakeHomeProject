@@ -1,6 +1,10 @@
 
 # Build and Run
-To build and run the project on your Mac, you need to run 'pod install' command from your terminal
+To build and run the project on your Mac, you need to run 'pod install' command from your terminal.
+
+# Login
+Paste 'user1' or 'user2', 'user3', 'user4' in username field.
+Type in any password.
 
 # VIPER templates
 
