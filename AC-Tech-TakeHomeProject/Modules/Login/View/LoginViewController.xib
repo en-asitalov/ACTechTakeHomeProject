@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="AC_Tech_TakeHomeProject" customModuleProvider="target">
+            <connections>
+                <outlet property="imageViewBottomConstraint" destination="5Zm-WK-CQg" id="84L-6k-o0x"/>
+                <outlet property="logoImageView" destination="Eqd-3i-NLt" id="dWx-8d-Lv3"/>
+                <outlet property="passwordTextField" destination="m43-5P-k00" id="MHC-Qo-KBv"/>
+                <outlet property="usernameTextField" destination="J9a-41-72i" id="teJ-7q-UH7"/>
+                <outlet property="usernameTopConstraint" destination="ycv-uU-GOF" id="XlH-zN-DPJ"/>
+                <outlet property="view" destination="m4Q-JW-exu" id="Uhc-Qy-Q1P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="m4Q-JW-exu">
+            <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="m43-5P-k00" customClass="LoginTextField" customModule="AC_Tech_TakeHomeProject" customModuleProvider="target">
+                    <rect key="frame" x="100" y="410" width="634" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="lJr-0X-IKM"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="1uE-FB-6YV"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="J9a-41-72i" customClass="LoginTextField" customModule="AC_Tech_TakeHomeProject" customModuleProvider="target">
+                    <rect key="frame" x="100" y="340" width="634" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ukN-mC-moh"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="mBx-0m-c1V"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcn-mR-NlU" customClass="LoginButton" customModule="AC_Tech_TakeHomeProject" customModuleProvider="target">
+                    <rect key="frame" x="100" y="500" width="634" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="L6e-sl-Z12"/>
+                    </constraints>
+                    <state key="normal" title="LOGIN"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    </variation>
+                    <connections>
+                        <action selector="didTapLogin:" destination="-1" eventType="touchUpInside" id="IEx-fO-xjg"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AC_Tech_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Eqd-3i-NLt">
+                    <rect key="frame" x="297" y="80" width="240" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="Ise-gN-lU5"/>
+                        <constraint firstAttribute="height" constant="180" id="cvp-2M-Zt8"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pcn-mR-NlU" secondAttribute="trailing" constant="30" id="4lE-fc-b0W">
+                    <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                </constraint>
+                <constraint firstItem="J9a-41-72i" firstAttribute="top" secondItem="Eqd-3i-NLt" secondAttribute="bottom" constant="34" id="5Zm-WK-CQg">
+                    <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                </constraint>
+                <constraint firstItem="Eqd-3i-NLt" firstAttribute="top" secondItem="m4Q-JW-exu" secondAttribute="top" constant="80" id="CTJ-09-SSC"/>
+                <constraint firstItem="Eqd-3i-NLt" firstAttribute="centerX" secondItem="J9a-41-72i" secondAttribute="centerX" id="Iu6-Pu-Pdn"/>
+                <constraint firstItem="J9a-41-72i" firstAttribute="leading" secondItem="m4Q-JW-exu" secondAttribute="leading" constant="30" id="MFj-tT-DLW">
+                    <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="J9a-41-72i" secondAttribute="trailing" constant="30" id="Pcz-1E-T1d">
+                    <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                </constraint>
+                <constraint firstItem="m43-5P-k00" firstAttribute="leading" secondItem="m4Q-JW-exu" secondAttribute="leading" constant="30" id="W2y-Gs-s50">
+                    <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                </constraint>
+                <constraint firstItem="m43-5P-k00" firstAttribute="top" secondItem="J9a-41-72i" secondAttribute="bottom" constant="10" id="cyY-kD-Dff">
+                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                </constraint>
+                <constraint firstItem="pcn-mR-NlU" firstAttribute="top" secondItem="m43-5P-k00" secondAttribute="bottom" constant="40" id="gkX-c3-2nb"/>
+                <constraint firstItem="pcn-mR-NlU" firstAttribute="leading" secondItem="m4Q-JW-exu" secondAttribute="leading" constant="30" id="hsC-g0-TqX">
+                    <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="m43-5P-k00" secondAttribute="trailing" constant="30" id="kDF-KG-LEU">
+                    <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                </constraint>
+                <constraint firstItem="J9a-41-72i" firstAttribute="top" secondItem="m4Q-JW-exu" secondAttribute="top" constant="80" id="ycv-uU-GOF"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ycv-uU-GOF"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="139" y="-1"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AC_Tech_Logo" width="198" height="180"/>
+    </resources>
+</document>

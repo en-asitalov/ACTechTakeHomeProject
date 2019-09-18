@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="UniNeueRegular.otf">
+            <string>UniNeueRegular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vOH-Yb-dRJ" customClass="LogoutFooterView" customModule="AC_Tech_TakeHomeProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIG-rO-8Z8">
+                    <rect key="frame" x="161.5" y="4.5" width="52" height="35"/>
+                    <fontDescription key="fontDescription" name="UniNeueRegular" family="Uni Neue" pointSize="17"/>
+                    <color key="tintColor" red="0.90980392160000001" green="0.34901960780000002" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Logout">
+                        <color key="titleColor" red="0.090196078430000007" green="0.53333333329999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="deleteButton"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapLogoutButton:" destination="vOH-Yb-dRJ" eventType="touchUpInside" id="OrS-El-HMo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xIG-rO-8Z8" firstAttribute="centerY" secondItem="XxS-PN-5IM" secondAttribute="centerY" id="GhN-MQ-lzC"/>
+                <constraint firstItem="xIG-rO-8Z8" firstAttribute="centerX" secondItem="XxS-PN-5IM" secondAttribute="centerX" id="rgz-p2-qtz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="XxS-PN-5IM"/>
+            <connections>
+                <outlet property="logoutButton" destination="xIG-rO-8Z8" id="ivS-y1-SCc"/>
+            </connections>
+            <point key="canvasLocation" x="108" y="-198.35082458770617"/>
+        </view>
+    </objects>
+</document>

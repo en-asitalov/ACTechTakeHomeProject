@@ -1,0 +1,34 @@
+### Headers settings
+company: Company
+
+### Xcode project settings
+project_name: AC-Tech-TakeHomeProject
+xcodeproj_path: AC-Tech-TakeHomeProject.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: AC-Tech-TakeHomeProject
+
+# The file path for new modules
+project_file_path: AC-Tech-TakeHomeProject/Modules
+
+# The Xcode group path to new modules
+project_group_path: AC-Tech-TakeHomeProject/Modules
+
+### Tests generation settings section
+# The tests target name
+test_target: AC-Tech-TakeHomeProjectTests
+
+# The file path for new tests
+test_file_path: AC-Tech-TakeHomeProjectTests/Modules
+
+# The Xcode group path to new tests
+test_group_path: AC-Tech-TakeHomeProjectTests/Modules
+
+### Dependencies settings section
+podfile_path: podfile
+
+### Templates
+templates:
+- {name: viper}
+

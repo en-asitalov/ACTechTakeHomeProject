@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="UniNeueBold.otf">
+            <string>UniNeueBold</string>
+        </array>
+        <array key="UniNeueRegular.otf">
+            <string>UniNeueRegular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="90" id="Dje-1n-WM8" customClass="PaymentCell" customModule="AC_Tech_TakeHomeProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dje-1n-WM8" id="dsF-Tq-UKc">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="256" text="22/08/2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvm-UA-qiR">
+                        <rect key="frame" x="289" y="50.5" width="66" height="17"/>
+                        <fontDescription key="fontDescription" name="UniNeueBold" family="Uni Neue" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="dateLabel"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120,28 EUR " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHk-at-nhJ">
+                        <rect key="frame" x="259" y="18" width="96" height="24.5"/>
+                        <fontDescription key="fontDescription" name="UniNeueBold" family="Uni Neue" pointSize="18"/>
+                        <color key="textColor" red="0.090196078430000007" green="0.53333333329999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="amountLabel"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. of transactions:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMH-Eo-XEY">
+                        <rect key="frame" x="20" y="51" width="100" height="16.5"/>
+                        <fontDescription key="fontDescription" name="UniNeueRegular" family="Uni Neue" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="numberOfTransactionsTitleLabel"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65O-GT-5H1">
+                        <rect key="frame" x="20" y="22" width="64" height="17"/>
+                        <fontDescription key="fontDescription" name="UniNeueRegular" family="Uni Neue" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="paymentIdTitleLabel"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12341234123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXW-nm-X1h">
+                        <rect key="frame" x="88" y="22" width="67.5" height="17"/>
+                        <fontDescription key="fontDescription" name="UniNeueBold" family="Uni Neue" pointSize="12"/>
+                        <color key="textColor" red="0.090196078430000007" green="0.53333333329999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="paymentIdValueLabel"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI0-59-TlN">
+                        <rect key="frame" x="124" y="50.5" width="14" height="17"/>
+                        <fontDescription key="fontDescription" name="UniNeueBold" family="Uni Neue" pointSize="12"/>
+                        <color key="textColor" red="0.090196078430000007" green="0.53333333329999999" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="numberOfTransactionsValueLabel"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bMH-Eo-XEY" firstAttribute="leading" secondItem="dsF-Tq-UKc" secondAttribute="leading" constant="20" id="7s3-m0-VjH"/>
+                    <constraint firstItem="hI0-59-TlN" firstAttribute="centerY" secondItem="hvm-UA-qiR" secondAttribute="centerY" id="Cx9-D7-wup"/>
+                    <constraint firstAttribute="trailing" secondItem="GHk-at-nhJ" secondAttribute="trailing" constant="20" id="NeY-5Q-NnF"/>
+                    <constraint firstItem="GHk-at-nhJ" firstAttribute="top" secondItem="dsF-Tq-UKc" secondAttribute="top" constant="18" id="Pgh-qn-AZL"/>
+                    <constraint firstItem="65O-GT-5H1" firstAttribute="centerY" secondItem="GHk-at-nhJ" secondAttribute="centerY" id="Urf-yP-oZw"/>
+                    <constraint firstItem="bMH-Eo-XEY" firstAttribute="centerY" secondItem="hvm-UA-qiR" secondAttribute="centerY" id="bXd-oA-JK4"/>
+                    <constraint firstItem="hvm-UA-qiR" firstAttribute="trailing" secondItem="GHk-at-nhJ" secondAttribute="trailing" id="dMj-YB-UNW"/>
+                    <constraint firstItem="uXW-nm-X1h" firstAttribute="leading" secondItem="65O-GT-5H1" secondAttribute="trailing" constant="4" id="kWj-rI-jBM"/>
+                    <constraint firstItem="hvm-UA-qiR" firstAttribute="top" secondItem="GHk-at-nhJ" secondAttribute="bottom" constant="8" id="lKo-zl-MoV"/>
+                    <constraint firstItem="uXW-nm-X1h" firstAttribute="centerY" secondItem="GHk-at-nhJ" secondAttribute="centerY" id="xL4-7O-4p3"/>
+                    <constraint firstItem="hI0-59-TlN" firstAttribute="leading" secondItem="bMH-Eo-XEY" secondAttribute="trailing" constant="4" id="xqC-hD-S5o"/>
+                    <constraint firstItem="65O-GT-5H1" firstAttribute="leading" secondItem="dsF-Tq-UKc" secondAttribute="leading" constant="20" id="xs7-m4-C3U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="1gm-ax-bkM"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="amountLabel" destination="GHk-at-nhJ" id="kli-5E-toz"/>
+                <outlet property="dateLabel" destination="hvm-UA-qiR" id="0E9-9w-phX"/>
+                <outlet property="numberOfTranactionsTitleLabel" destination="bMH-Eo-XEY" id="cbo-Qg-ulP"/>
+                <outlet property="numberOfTranactionsValueLabel" destination="hI0-59-TlN" id="Oai-zY-QbI"/>
+                <outlet property="paymentIdTitleLabel" destination="65O-GT-5H1" id="yUS-kO-PuK"/>
+                <outlet property="paymentIdValueLabel" destination="uXW-nm-X1h" id="8tV-Ct-O4I"/>
+            </connections>
+            <point key="canvasLocation" x="-4.7999999999999998" y="-3.5982008995502253"/>
+        </tableViewCell>
+    </objects>
+</document>

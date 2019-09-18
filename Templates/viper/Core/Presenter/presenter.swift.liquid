@@ -1,0 +1,25 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+
+protocol {{ module_info.name }}PresenterLogic {
+}
+
+class {{ module_info.name }}Presenter: {{ module_info.name }}PresenterLogic {
+
+  weak var view: {{ module_info.name }}ViewControllerInput!
+  var interactor: {{ module_info.name }}InteractorLogic!
+  var router: {{ module_info.name }}RouterLogic!
+
+  init(view: {{ module_info.name }}ViewControllerInput, interactor: {{ module_info.name }}InteractorLogic, router: {{ module_info.name }}RouterLogic) {
+    self.view = view
+    self.interactor = interactor
+    self.router = router
+  }
+}

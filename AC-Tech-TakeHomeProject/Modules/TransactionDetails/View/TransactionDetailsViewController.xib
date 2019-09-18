@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransactionDetailsViewController" customModule="MyConcardis" customModuleProvider="target">
+            <connections>
+                <outlet property="transactionDetailsTableView" destination="mfb-7E-Fcg" id="R95-2B-JnY"/>
+                <outlet property="view" destination="m4Q-JW-exu" id="Uhc-Qy-Q1P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="m4Q-JW-exu">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" style="grouped" rowHeight="50" estimatedRowHeight="50" sectionHeaderHeight="1" sectionFooterHeight="1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfb-7E-Fcg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" name="paleGreyTwo"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="jN0-Tg-ZT1"/>
+                        <outlet property="delegate" destination="-1" id="7Kk-DB-x2a"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mfb-7E-Fcg" firstAttribute="top" secondItem="eJc-ex-sdP" secondAttribute="top" id="b4u-p0-p2e"/>
+                <constraint firstItem="mfb-7E-Fcg" firstAttribute="bottom" secondItem="eJc-ex-sdP" secondAttribute="bottom" id="moI-fl-1B2"/>
+                <constraint firstItem="mfb-7E-Fcg" firstAttribute="leading" secondItem="eJc-ex-sdP" secondAttribute="leading" id="n4J-dh-pgC"/>
+                <constraint firstItem="mfb-7E-Fcg" firstAttribute="trailing" secondItem="eJc-ex-sdP" secondAttribute="trailing" id="xZf-pC-JAS"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+            <viewLayoutGuide key="safeArea" id="eJc-ex-sdP"/>
+            <point key="canvasLocation" x="138.40000000000001" y="-2.2488755622188905"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="paleGreyTwo">
+            <color red="0.94509803921568625" green="0.94509803921568625" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
