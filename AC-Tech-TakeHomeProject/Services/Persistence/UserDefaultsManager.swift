@@ -11,6 +11,8 @@ import Foundation
 protocol UserDefaultsManager {
     func archivedData(with rootObject: Any, forKey: String)
     func unarchiveData(forKey: String) -> Any?
+    func setBool(value: Bool, for key: String)
+    func getBool(for key: String) -> Bool
 }
 
 class DefaultUserDefaultsManager: UserDefaultsManager {
@@ -26,5 +28,14 @@ class DefaultUserDefaultsManager: UserDefaultsManager {
         }
         
         return nil
+    }
+    
+    func setBool(value: Bool, for key: String) {
+        UserDefaults.standard.set(value, forKey: key)
+        UserDefaults.standard.synchronize()
+    }
+    
+    func getBool(for key: String) -> Bool {
+        return UserDefaults.standard.bool(forKey: key)
     }
 }

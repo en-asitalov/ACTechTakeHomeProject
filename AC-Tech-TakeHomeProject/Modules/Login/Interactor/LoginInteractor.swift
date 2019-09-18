@@ -15,9 +15,9 @@ protocol LoginInteractorLogic {
 
 class LoginInteractor: LoginInteractorLogic {
     
-    private let keychainService: LoginKeychainService
+    private let keychainService: KeychainService
     
-    init(keychainService: LoginKeychainService) {
+    init(keychainService: KeychainService) {
         self.keychainService = keychainService
     }
     

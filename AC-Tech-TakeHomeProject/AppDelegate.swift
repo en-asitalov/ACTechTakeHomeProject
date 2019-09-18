@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        resetKeyChainDataIfNeeded()
         setupInitialViewController()
         setupAppearance()
         return true
@@ -44,6 +45,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIBarButtonItem.appearance().setTitleTextAttributes([
             NSAttributedString.Key.foregroundColor: UIColor.white
             ], for: .normal)
+    }
+    
+    private func resetKeyChainDataIfNeeded() {
+        let userDefaultsManager = ServicesContainer.default.resolve(UserDefaultsManager.self)!
+        let keyChainService = ServicesContainer.default.resolve(KeychainService.self)!
+        
+        if !userDefaultsManager.getBool(for: "hasRunBeforeKey") {
+            keyChainService.removeLoginData()
+            userDefaultsManager.setBool(value: true, for: "hasRunBeforeKey")
+        }
     }
 }
 

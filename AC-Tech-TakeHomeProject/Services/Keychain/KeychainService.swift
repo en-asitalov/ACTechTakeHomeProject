@@ -9,24 +9,14 @@
 import Foundation
 import KeychainAccess
 
-public protocol LoginKeychainService {
+protocol KeychainService {
     func persistLogin(_ loginData: LoginKeychainModel)
     func fetchLoginData() -> LoginKeychainModel
     func removeLoginData()
 }
 
-public protocol KeychainService: LoginKeychainService {}
-
 final class DefaultKeychainService: KeychainService {
     private let keychain = Keychain(service: Bundle.main.bundleIdentifier!)
-    
-    func fetch(key: String) -> String? {
-        return keychain[key]
-    }
-    
-    func persist(key: String, value: String) {
-        keychain[key] = value
-    }
     
     func persistLogin(_ loginData: LoginKeychainModel) {
         keychain[LoginKeychainModel.usernameKey] = loginData.username
